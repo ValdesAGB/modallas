@@ -14,14 +14,76 @@ h2 {
     text-align: center;
 }
 
+/* Début Header section */
+
+header {
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+    top: 0;
+}
+
+.logoContainer {
+    width: 226px;
+    height: 111px;
+}
+
+.logoContainer>a {
+    width: 100%;
+    height: 130%;
+}
+
+.logoContainer>a>img {
+    width: 70%;
+    height: 100%;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 0 1.5em
+}
+
+.nav-link:hover {
+    color: #D4AF37;
+}
+
+.headerIconeContainer {
+    border-left: black solid 1px;
+    padding-left: 1.2em;
+}
+
+.headerIconeContainer>a {
+    color: black;
+    margin-left: 0.5em;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.headerIconeContainer>a:hover {
+    transform: translateY(-5px);
+}
+
+/* Fin Header section */
+
+
+
+
 /* Début Hero section */
 
 .heroSection {
-    border: red solid 1px;
     background-image: url("Images/heroBgCover.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 8px;
+    margin-top: 150px;
 }
 
 .heroSection>div {
@@ -29,35 +91,46 @@ h2 {
 }
 
 .heroSectionContent {
-    background-color: rgba(219, 77, 77, 0.356);
-    width: 70%;
+    background-color: #5f4b4b7a;
+    width: 65%;
     padding: 2em;
 }
 
-.heroSectionBtnContainer{
+.heroSectionBtnContainer {
     margin-top: 2em;
 }
 
 .realisation {
+    display: inline-block;
     color: white;
     background-color: black;
     text-decoration: none;
     padding: 0.8em;
-    border-radius: 1px;
+    border-radius: 5px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin-right: 50px;
+    transition: all 0.3s ease;
 }
 
-.showroom{
- color: white;
-    background-color: black;
+.realisation:hover {
+    transform: scale(1.05);
+}
+
+.showroom {
+    display: inline-block;
+    color: white;
     text-decoration: none;
     padding: 0.8em;
-    border-radius: 1px;
+    border-radius: 2px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    border : 1px solid #D4D4D4
+    border: 1px solid #D4D4D4;
+    transition: all 0.3s ease;
+}
+
+.showroom:hover {
+    transform: scale(1.05);
 }
 
 .heroSectionContent>h1 {
@@ -125,13 +198,12 @@ h2 {
 }
 
 
-.collaborateItems>.row {
+.collaborateItemsContainer>.row {
     gap: 2em;
     justify-content: center;
 }
 
-.collaborateItems>.row>.col-10,
-.collaborateItems>.row>.col-5 {
+.collaborateItem{
     background-color: #FFFFFF;
     padding: 2em;
     box-shadow: 1px 1px 10px rgb(175, 172, 172);
@@ -140,8 +212,7 @@ h2 {
     cursor: pointer;
 }
 
-.collaborateItems>.row>.col-10,
-.collaborateItems>.row>.col-5:hover {
+.collaborateItem:hover {
     box-shadow: 1px 1px 10px rgb(136, 134, 134);
 }
 
@@ -190,22 +261,26 @@ h2 {
     margin-bottom: 2em;
 }
 
-.processusItemsContainer>.row>.col {
+.processusItemsContainer>.row{
+justify-items: center;
+}
+
+.processusItem {
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.processusItemsContainer>.row>.col:hover {
+.processusItem:hover {
     transform: translateY(-10px);
 }
 
-.processusItemsContainer>.row>.col>i {
+.processusItem>i {
     font-size: 3em;
     color: black;
 }
 
-.processusItemsContainer>.row>.col>p {
+.processusItem>p {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
@@ -216,8 +291,89 @@ h2 {
     font-weight: 300;
 }
 
-
 /* Fin processus section */
+
+/* Début Services section */
+
+.servicesSection {
+    background-color: #B9B7AA80;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.servicesSection > div> .container> .row{
+    align-items: center;
+}
+
+
+.servicesSectionParagraphContainer {
+    background-color: #52525280;
+    padding: 2em;
+    color: white;
+}
+
+.servicesSectionParagraph {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+.carousel-item {
+    height: 320px;
+}
+
+.serviceItem {
+    background-color: #FAFAFACC;
+    padding: 3em;
+    height: 100%;
+}
+
+.serviceItemIcone {
+    background-color: #E5E7EB;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 6em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.serviceItemIcone>i {
+    font-size: 2.5em;
+}
+
+.serviceItem>h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+.serviceItem>p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+
+}
+
+
+.servicesSectionBtnContainer {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.servicesSectionBtnContainer>a {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 0.8em;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.servicesSectionBtnContainer>a:hover {
+    transform: scale(1.05);
+}
+
+
+/* Fin Services section */
 
 /* Début Testimony section */
 
@@ -243,18 +399,10 @@ h2 {
     align-items: center;
 }
 
-.testimonyItemCoverContainer {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-}
 
 .testimonyItemCover {
     width: 100%;
-    height: 150%;
-    object-fit: cover;
-    border-radius: 20%;
-
+    border-radius: 5px;
 }
 
 .testimonyItemName {
@@ -301,3 +449,131 @@ h2 {
 }
 
 /* Fin expertise section */
+
+/* Début Footer section */
+
+footer {
+    background-color: #000000;
+    padding: 2em 0;
+}
+
+.footerOverCopyright {
+    padding: 2em 0;
+}
+
+.footerSiteName {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.footerParagraphUnderSiteName {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 0.88em;
+    margin: 1.5em 0;
+}
+
+.footerIconeContainerUnderParagraphSiteName>a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.8em;
+    font-size: 1.3em;
+}
+
+.footerServiceContainer>h5 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.footerServiceContainer>ul {
+    margin: 1.1em 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    padding: 0 19px;
+    line-height: 1.9em;
+
+}
+
+.footerServiceContainer>ul>li {
+    font-size: 0.9em;
+}
+
+.footerEvementContainer>h5 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.footerEvementContainer>ul {
+    margin: 1.1em 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    padding: 0 19px;
+    line-height: 1.9em;
+
+}
+
+.footerEvementContainer>ul>li {
+    font-size: 0.9em;
+}
+
+.footerContactContainer>h5 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.footerContactItemsContainer {
+    margin: 1.1em 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    line-height: 2em;
+}
+
+
+.footerContactItem>span>i {
+    margin-right: 0.4em;
+    font-size: 0.9em;
+}
+
+.footerContactItem>a>i {
+    margin-right: 0.4em;
+    font-size: 0.9em;
+}
+
+.footerContactItem>span {
+    font-size: 0.9em;
+}
+
+.footerContactItem>a {
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+    display: inline;
+}
+
+.footerCopyright {
+    border-top: solid 1px rgb(110, 104, 104);
+}
+
+.footerCopyright>p {
+    text-align: center;
+    padding-top: 2em;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+}
+
+/* Fin Footer section */

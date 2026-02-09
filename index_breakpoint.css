@@ -1,0 +1,523 @@
+@media (max-width: 576px) {
+
+    /* Début Header section */
+
+    .logoContainer {
+        width: 200px;
+    }
+
+    .headerIconeContainer {
+        display: none;
+    }
+
+    /* Fin Header section */
+
+
+    /* Début Hero section */
+
+    .heroSectionContent {
+        width: 100%;
+        padding: 2em 0.5em;
+    }
+
+    .heroSectionContent>h1 {
+        font-size: 28px;
+    }
+
+    .heroSectionContent>p {
+        font-size: 15px;
+        line-height: 25px;
+        margin: 1em 0;
+    }
+
+    .heroSectionBtnContainer {
+        margin-top: 0em;
+    }
+
+    .realisation {
+        font-size: 0.8em;
+        padding: 0.6em;
+        border-radius: 2px;
+        font-weight: 500;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+
+    .showroom {
+        font-size: 0.8em;
+        padding: 0.6em;
+        border-radius: 2px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        margin-right: 0px;
+    }
+
+    /* Fin Hero section */
+
+
+    /* Début about section */
+
+    .aboutSection>p {
+        text-align: justify;
+        margin: 20px 0;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .aboutSection>a {
+        font-size: 0.8em;
+        padding: 0.6em;
+        border-radius: 2px;
+    }
+
+    /* Fin about section */
+
+
+    /* Début collaborate section */
+
+    .subtitle {
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+    .collaborateItemsContainer>.row {
+        gap: 3em 0;
+    }
+
+    .collaborateItem {
+        padding: 2em;
+    }
+
+    .itemTitle>svg {
+        margin-right: 15px;
+    }
+
+    .itemDescription {
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .itemListContainer>li {
+        font-size: 15px;
+    }
+
+    /* Fin collaborate section */
+
+
+    /* Début processus section */
+
+    .processusItem>i {
+        font-size: 3em;
+        color: black;
+    }
+
+    .processusItem>p {
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+    .processusDescription {
+        font-weight: 200;
+    }
+
+    /* Fin processus section */
+
+
+    /* Début Services section */
+
+    .servicesSectionParagraphContainer {
+        padding: 1em;
+    }
+
+    .servicesSectionParagraph {
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+    .ServicesCarouselContainer {
+        margin-top: 40px
+    }
+
+    .carousel-item {
+        height: 315px;
+    }
+
+    .serviceItem {
+        padding: 2em;
+    }
+
+    .serviceItemIcone {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .serviceItemIcone>i {
+        font-size: 1.5em;
+
+    }
+
+    .servicesSectionBtnContainer {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .servicesSectionBtnContainer>a {
+        font-size: 0.8em;
+        padding: 0.6em;
+        border-radius: 2px;
+        font-weight: 500;
+    }
+
+    /* Fin Services section */
+
+
+    /* Début Testimony section */
+
+    .testimonyItem {
+        padding: 1em;
+        border-radius: 5px;
+        margin-bottom: 2em;
+    }
+
+    .testimonyItemCover {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .testimonyItemParagraph {
+        font-weight: 300;
+        margin-top: 1.5em;
+        font-size: 0.8em;
+    }
+
+    /* Fin Testimony section */
+
+    /* Début expertise section */
+
+    .expertiseItemParagraph {
+        font-size: 0.8em;
+    }
+
+    /* Fin expertise section */
+
+
+    /* Début Footer section */
+    .footerSiteNameContainer,
+    .footerServiceContainer,
+    .footerEvementContainer,
+    .footerContactContainer {
+        margin-top: 2em;
+    }
+
+    /* Fin Footer section */
+
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Début Header section */
+
+    .headerIconeContainer {
+        display: none;
+    }
+
+    /* Fin Header section */
+
+    /* Début Hero section */
+
+    .heroSectionContent {
+        width: 100%;
+        padding: 2.5em 1.5em;
+    }
+
+    .heroSectionContent>h1 {
+        font-size: 48px;
+    }
+
+    .heroSectionContent>p {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 1em 0;
+    }
+
+    .heroSectionBtnContainer {
+        margin-top: 0em;
+    }
+
+    .realisation {
+        font-size: 0.9em;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+
+
+    .showroom {
+        font-size: 0.9em;
+
+    }
+
+    /* Fin Hero section */
+
+
+
+    /* Début about section */
+
+    .aboutSection>p {
+        margin: 20px 0;
+        font-weight: 300;
+    }
+
+    .aboutSection>a {
+        font-size: 0.9em;
+        border-radius: 2px;
+    }
+
+    /* Fin about section */
+
+
+
+    /* Début Services section */
+
+    .ServicesCarouselContainer {
+        margin-top: 40px
+    }
+
+    .carousel-item {
+        height: 280px;
+    }
+
+    .serviceItem {
+        padding: 2em;
+    }
+
+    .serviceItemIcone {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .serviceItemIcone>i {
+        font-size: 1.5em;
+    }
+
+    .servicesSectionBtnContainer>a {
+        font-size: 0.9em;
+        padding: 0.6em;
+        border-radius: 2px;
+        font-weight: 500;
+    }
+
+    /* Fin Services section */
+
+
+    /* Début Testimony section */
+
+    .testimonyItem {
+        padding: 1em;
+        border-radius: 5px;
+        margin-bottom: 2em;
+    }
+
+    .testimonyItemCover {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .testimonyItemParagraph {
+        font-weight: 300;
+        margin-top: 1.5em;
+        font-size: 0.8em;
+    }
+
+    /* Fin Testimony section */
+
+
+    /* Début expertise section */
+
+    .expertiseItemParagraph {
+        font-size: 0.95em;
+    }
+
+    /* Fin expertise section */
+
+
+    /* Début Footer section */
+    .footerSiteNameContainer,
+    .footerServiceContainer,
+    .footerEvementContainer,
+    .footerContactContainer {
+        margin-top: 2em;
+    }
+
+    /* Fin Footer section */
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /* Début Header section */
+
+    .headerIconeContainer {
+        display: none;
+    }
+
+    /* Fin Header section */
+
+    /* Début Hero section */
+
+    .heroSectionContent {
+        width: 90%;
+        padding: 2.5em 1.5em;
+    }
+
+
+    .heroSectionContent>p {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 1em 0;
+    }
+
+    .heroSectionBtnContainer {
+        margin-top: 0em;
+    }
+
+    .realisation {
+        font-size: 1em;
+    }
+
+
+    .showroom {
+        font-size: 1em;
+    }
+
+    /* Fin Hero section */
+
+
+    /* Début about section */
+
+
+    .aboutSection>p {
+        margin: 20px 0;
+        font-weight: 300;
+    }
+
+
+
+    .aboutSection>a {
+        font-size: 0.9em;
+        border-radius: 2px;
+    }
+
+
+    /* Fin about section */
+
+
+
+    /* Début Services section */
+
+    .ServicesCarouselContainer {
+        margin-top: 40px
+    }
+
+    .carousel-item {
+        height: 280px;
+    }
+
+    .serviceItem {
+        padding: 2em;
+    }
+
+    .serviceItemIcone {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .serviceItemIcone>i {
+        font-size: 1.5em;
+    }
+
+    .servicesSectionBtnContainer>a {
+        font-size: 0.9em;
+        padding: 0.6em;
+        border-radius: 2px;
+        font-weight: 500;
+    }
+
+    /* Fin Services section */
+
+    /* Début Testimony section */
+
+    .testimonyItem {
+        padding: 1em;
+        border-radius: 5px;
+        margin-bottom: 2em;
+    }
+
+    .testimonyItemCover {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .testimonyItemName {
+        font-size: 1.5em;
+    }
+
+    .testimonyItemParagraph {
+        font-weight: 300;
+        margin-top: 1.5em;
+        font-size: 1em;
+    }
+
+    /* Fin Testimony section */
+
+
+    /* Début expertise section */
+
+    .expertiseItemParagraph {
+        font-size: 0.9em;
+    }
+
+    /* Fin expertise section */
+
+
+    /* Début Footer section */
+    .footerSiteNameContainer,
+    .footerServiceContainer,
+    .footerEvementContainer,
+    .footerContactContainer {
+        margin-top: 2em;
+    }
+
+    /* Fin Footer section */
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    
+    /* Début Header section */
+
+    .headerIconeContainer {
+        display: none;
+    }
+
+    /* Fin Header section */
+
+    /* Début Services section */
+
+    .carousel-item {
+        height: 350px;
+    }
+
+    /* Fin Services section */
+
+    /* Début Testimony section */
+
+    .testimonyItem {
+        padding: 1em;
+        border-radius: 5px;
+        margin-bottom: 2em;
+    }
+
+    /* Fin Testimony section */
+
+}
+

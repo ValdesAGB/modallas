@@ -16,6 +16,9 @@
     <!--Lien CSS-->
     <link rel="stylesheet" href="index.css">
 
+    <!--Lien CSS Responsivité-->
+    <link rel="stylesheet" href="index_breakpoint.css">
+
     <!--CDN Poppins + Playfair Display-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +29,54 @@
 
 
 <body class="container-fluid">
+
+    <header class="row">
+        <div>
+            <nav class="navbar navbar-expand-xl">
+                <div class="container-fluid">
+
+                    <div class="logoContainer">
+                        <a href="index.html">
+                            <img src="Images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">À propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Réalisations</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Showroom</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="headerIconeContainer">
+                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <section class="container heroSection">
         <div>
@@ -49,16 +100,14 @@
         <a href="" class="button">En savoir plus</a>
     </section>
 
-
     <section class="container collaborateSection">
         <h2>Modallas_s Event & Design collabore avec</h2>
         <p class="subtitle">Un réseau de professionnels de confiance pour des événements d'exception</p>
-        <div class="collaborateItems">
+        <div class="collaborateItemsContainer">
             <div class="row">
-                <div class="col-5">
+                <div class="collaborateItem col-12 col-lg-5">
                     <h3 class="itemTitle">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 24H0V0H24V24Z" stroke="#E5E7EB" />
                             <g clip-path="url(#clip0_434_1894)">
                                 <path
                                     d="M24 12C24 12.0422 24 12.0844 24 12.1266C23.9813 13.8375 22.425 15 20.7141 15H16.125C14.8828 15 13.875 16.0078 13.875 17.25C13.875 17.4094 13.8938 17.5641 13.9219 17.7141C14.0203 18.1922 14.2266 18.6516 14.4281 19.1156C14.7141 19.7625 14.9953 20.4047 14.9953 21.0844C14.9953 22.575 13.9828 23.9297 12.4922 23.9906C12.3281 23.9953 12.1641 24 11.9953 24C5.37187 24 0 18.6281 0 12C0 5.37188 5.37188 0 12 0C18.6281 0 24 5.37188 24 12ZM6 13.5C6 13.1022 5.84196 12.7206 5.56066 12.4393C5.27936 12.158 4.89782 12 4.5 12C4.10218 12 3.72064 12.158 3.43934 12.4393C3.15804 12.7206 3 13.1022 3 13.5C3 13.8978 3.15804 14.2794 3.43934 14.5607C3.72064 14.842 4.10218 15 4.5 15C4.89782 15 5.27936 14.842 5.56066 14.5607C5.84196 14.2794 6 13.8978 6 13.5ZM6 9C6.39782 9 6.77936 8.84196 7.06066 8.56066C7.34196 8.27936 7.5 7.89782 7.5 7.5C7.5 7.10218 7.34196 6.72064 7.06066 6.43934C6.77936 6.15804 6.39782 6 6 6C5.60218 6 5.22064 6.15804 4.93934 6.43934C4.65804 6.72064 4.5 7.10218 4.5 7.5C4.5 7.89782 4.65804 8.27936 4.93934 8.56066C5.22064 8.84196 5.60218 9 6 9ZM13.5 4.5C13.5 4.10218 13.342 3.72064 13.0607 3.43934C12.7794 3.15804 12.3978 3 12 3C11.6022 3 11.2206 3.15804 10.9393 3.43934C10.658 3.72064 10.5 4.10218 10.5 4.5C10.5 4.89782 10.658 5.27936 10.9393 5.56066C11.2206 5.84196 11.6022 6 12 6C12.3978 6 12.7794 5.84196 13.0607 5.56066C13.342 5.27936 13.5 4.89782 13.5 4.5ZM18 9C18.3978 9 18.7794 8.84196 19.0607 8.56066C19.342 8.27936 19.5 7.89782 19.5 7.5C19.5 7.10218 19.342 6.72064 19.0607 6.43934C18.7794 6.15804 18.3978 6 18 6C17.6022 6 17.2206 6.15804 16.9393 6.43934C16.658 6.72064 16.5 7.10218 16.5 7.5C16.5 7.89782 16.658 8.27936 16.9393 8.56066C17.2206 8.84196 17.6022 9 18 9Z"
@@ -83,7 +132,7 @@
                         <li>Mobilier et accessoires décoratifs.</li>
                     </ul>
                 </div>
-                <div class="col-5">
+                <div class="collaborateItem col-12 col-lg-5">
                     <h3 class="itemTitle">
                         <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_434_1960)">
@@ -111,10 +160,9 @@
                         <li>Conférences et séminaires.</li>
                     </ul>
                 </div>
-                <div class="col-5">
+                <div class=" collaborateItem col-12 col-lg-5">
                     <h3 class="itemTitle">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 24H0V0H24V24Z" stroke="#E5E7EB" />
                             <g clip-path="url(#clip0_434_1904)">
                                 <path
                                     d="M24 1.5C24 6.825 20.0344 11.2266 14.8969 11.9062C14.5641 9.40312 13.4625 7.14375 11.8359 5.37656C13.6313 2.17031 17.0625 0 21 0H22.5C23.3297 0 24 0.670312 24 1.5ZM0 4.5C0 3.67031 0.670312 3 1.5 3H3C8.79844 3 13.5 7.70156 13.5 13.5V15V22.5C13.5 23.3297 12.8297 24 12 24C11.1703 24 10.5 23.3297 10.5 22.5V15C4.70156 15 0 10.2984 0 4.5Z"
@@ -138,11 +186,9 @@
                         <li>Bouquets et arrangements.</li>
                     </ul>
                 </div>
-                <div class="col-5">
+                <div class=" collaborateItem col-12 col-lg-5">
                     <h3 class="itemTitle">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 24H0V0H24V24Z" stroke="#E5E7EB" />
-                            <path d="M24 24H0V0H24V24Z" stroke="#E5E7EB" />
                             <path
                                 d="M6.98906 3.0375L6.50156 4.5H3C1.34531 4.5 0 5.84531 0 7.5V19.5C0 21.1547 1.34531 22.5 3 22.5H21C22.6547 22.5 24 21.1547 24 19.5V7.5C24 5.84531 22.6547 4.5 21 4.5H17.4984L17.0109 3.0375C16.7062 2.11875 15.8484 1.5 14.8781 1.5H9.12188C8.15156 1.5 7.29375 2.11875 6.98906 3.0375ZM12 9C13.1935 9 14.3381 9.47411 15.182 10.318C16.0259 11.1619 16.5 12.3065 16.5 13.5C16.5 14.6935 16.0259 15.8381 15.182 16.682C14.3381 17.5259 13.1935 18 12 18C10.8065 18 9.66193 17.5259 8.81802 16.682C7.97411 15.8381 7.5 14.6935 7.5 13.5C7.5 12.3065 7.97411 11.1619 8.81802 10.318C9.66193 9.47411 10.8065 9 12 9Z"
                                 fill="#404040" />
@@ -160,10 +206,9 @@
                         <li>Portraits professionnels.</li>
                     </ul>
                 </div>
-                <div class="col-10">
+                <div class="collaborateItem col-12 col-lg-10">
                     <h3 class="itemTitle">
                         <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 24H0V0H21V24Z" stroke="#E5E7EB" />
                             <g clip-path="url(#clip0_434_1914)">
                                 <path
                                     d="M19.5 0C18.75 0 13.5 1.5 13.5 8.25V13.5C13.5 15.1547 14.8453 16.5 16.5 16.5H18V22.5C18 23.3297 18.6703 24 19.5 24C20.3297 24 21 23.3297 21 22.5V16.5V11.25V1.5C21 0.670312 20.3297 0 19.5 0ZM3 0.75C3 0.365625 2.71406 0.046875 2.32969 0.0046875C1.94531 -0.0375 1.60313 0.215625 1.51875 0.585938L0.0984375 6.975C0.0328125 7.27031 0 7.57031 0 7.87031C0 10.0219 1.64531 11.7891 3.75 11.9813V22.5C3.75 23.3297 4.42031 24 5.25 24C6.07969 24 6.75 23.3297 6.75 22.5V11.9813C8.85469 11.7891 10.5 10.0219 10.5 7.87031C10.5 7.57031 10.4672 7.27031 10.4016 6.975L8.98125 0.585938C8.89688 0.210938 8.54531 -0.0375 8.16562 0.0046875C7.78594 0.046875 7.5 0.365625 7.5 0.75V7.04062C7.5 7.29375 7.29375 7.5 7.04062 7.5C6.80156 7.5 6.60469 7.31719 6.58125 7.07812L5.99531 0.684375C5.9625 0.295313 5.63906 0 5.25 0C4.86094 0 4.5375 0.295313 4.50469 0.684375L3.92344 7.07812C3.9 7.31719 3.70312 7.5 3.46406 7.5C3.21094 7.5 3.00469 7.29375 3.00469 7.04062V0.75H3ZM5.26406 7.875H5.25H5.23594L5.25 7.84219L5.26406 7.875Z"
@@ -184,7 +229,7 @@
 
                     <div class="row">
 
-                        <div class="col">
+                        <div class="col-sm">
                             <ul class="itemListContainer">
                                 <li>Espaces de réception exclusifs.</li>
                                 <li>Services de restauration haut de gamme.</li>
@@ -207,45 +252,43 @@
         </div>
     </section>
 
-
-
     <section class="processusSection row">
         <div>
             <div class="container">
                 <h2>Processus de travail</h2>
                 <div class="processusItemsContainer">
                     <div class="row">
-                        <div class="col">
+                        <div class="processusItem col-6 col-sm-3 col-lg">
                             <i class="bi bi-1-circle-fill"></i>
                             <p>Prise de contact.</p>
                         </div>
 
-                        <div class="col">
+                        <div class="processusItem col-6 col-sm-3 col-lg">
                             <i class="bi bi-2-circle-fill"></i>
                             <p>Analyse du besoin.</p>
                         </div>
 
-                        <div class="col">
+                        <div class="processusItem col-6 col-sm-3 col-lg">
                             <i class="bi bi-3-circle-fill"></i>
                             <p>Proposition créative.</p>
                         </div>
 
-                        <div class="col">
+                        <div class="processusItem col-6 col-sm-3 col-lg">
                             <i class="bi bi-4-circle-fill"></i>
                             <p>Proposition budget.</p>
                         </div>
 
-                        <div class="col">
+                        <div class="processusItem col-6 col-sm col-lg">
                             <i class="bi bi-5-circle-fill"></i>
                             <p>Validation.</p>
                         </div>
 
-                        <div class="col">
+                        <div class="processusItem col-6 col-sm col-lg">
                             <i class="bi bi-6-circle-fill"></i>
                             <p>Mise en place.</p>
                         </div>
 
-                        <div class="col">
+                        <div class="processusItem col col-sm col-lg">
                             <i class="bi bi-7-circle-fill"></i>
                             <p>Livraison & suivi.</p>
                         </div>
@@ -259,97 +302,129 @@
 
     </section>
 
+    <section class="servicesSection row">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="servicesSectionParagraphContainer">
+                            <p class="servicesSectionParagraph">
 
-    <section>
-        <div class="row">
-            <div class="col">
-                Modallas_s Event & Design accompagne particuliers et professionnels dans la conception et la réalisation
-                de décors événementiels élégants et sur mesure.
-                Nous proposons une décoration événementielle clé en main, de l’imagination du concept à la mise en place
-                finale, en tenant compte du lieu, du thème et de l’ambiance souhaitée.
-                Notre expertise en scénographie florale nous permet de créer des compositions harmonieuses et adaptées à
-                chaque espace, afin de sublimer les événements avec finesse et émotion.
-                Nous mettons également à disposition un service de location et de vente d’articles de décoration,
-                incluant accessoires, supports, éléments floraux et objets décoratifs soigneusement sélectionnés.
-                Chaque projet peut faire l’objet d’une conception sur mesure, pensée en collaboration avec le client
-                pour garantir un rendu unique, cohérent et mémorable.
-            </div>
-            <div class="col">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
+                                Modallas_s Event & Design accompagne particuliers et professionnels dans la conception
+                                et la
+                                réalisation
+                                de décors événementiels élégants et sur mesure. <br>
+                                Nous proposons une décoration événementielle clé en main, de l’imagination du concept à
+                                la
+                                mise
+                                en place
+                                finale, en tenant compte du lieu, du thème et de l’ambiance souhaitée.
+                                Notre expertise en scénographie florale nous permet de créer des compositions
+                                harmonieuses
+                                et
+                                adaptées à
+                                chaque espace, afin de sublimer les événements avec finesse et émotion. <br>
+                                Nous mettons également à disposition un service de location et de vente d’articles de
+                                décoration,
+                                incluant accessoires, supports, éléments floraux et objets décoratifs soigneusement
+                                sélectionnés. <br>
+                                Chaque projet peut faire l’objet d’une conception sur mesure, pensée en collaboration
+                                avec
+                                le
+                                client
+                                pour garantir un rendu unique, cohérent et mémorable.
+                            </p>
+                        </div>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div>
-                                <i class=""></i>
-                                <h6>Décoration événementielle.</h6>
-                                <p>Conception et réalisation de décors pour tous types d'événements, de l'idée à la mise
-                                    en place finale.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div>
-                                <i class=""></i>
-                                <h6>Location de matériel.</h6>
-                                <p>Mise à disposition de vases, supports, accessoires, éléments décoratifs.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div>
-                                <i class=""></i>
-                                <h6>Scénographie florale.</h6>
-                                <p>Création de compositions florales adaptées à chaque ambiance et chaque espace.</p>
-                            </div>
-                        </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="ServicesCarouselContainer">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="serviceItem">
+                                            <div class="serviceItemIcone">
+                                                <i class="bi bi-calendar2-check-fill"></i>
+                                            </div>
+                                            <h6>Décoration événementielle.</h6>
+                                            <p>Conception et réalisation de décors pour tous types d'événements, de
+                                                l'idée à
+                                                la mise
+                                                en place finale.</p>
+                                        </div>
+                                    </div>
 
-                        <div class="carousel-item">
-                            <div>
-                                <i class=""></i>
-                                <h6>Conception sur mesure.</h6>
-                                <p>Créations personnalisées selon la vision du client et le thème de l'événement.</p>
+                                    <div class="carousel-item">
+                                        <div class="serviceItem">
+                                            <div class="serviceItemIcone">
+                                                <i class="bi bi-tools"></i>
+                                            </div>
+                                            <h6>Location de matériel.</h6>
+                                            <p>Mise à disposition de vases, supports, accessoires, éléments décoratifs.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="serviceItem">
+                                            <div class="serviceItemIcone">
+                                                <i class="bi bi-flower1"></i>
+                                            </div>
+                                            <h6>Scénographie florale.</h6>
+                                            <p>Création de compositions florales adaptées à chaque ambiance et chaque
+                                                espace.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="serviceItem">
+                                            <div class="serviceItemIcone">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </div>
+                                            <h6>Conception sur mesure.</h6>
+                                            <p>Créations personnalisées selon la vision du client et le thème de
+                                                l'événement.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="serviceItem">
+                                            <div class="serviceItemIcone">
+                                                <i class="bi bi-bag-heart"></i>
+                                            </div>
+                                            <h6>Vente d’articles de décoration.</h6>
+                                            <p>Ballons, fleurs artificielles, accessoires décoratifs, objets tendance.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
                             </div>
                         </div>
-
-                        <div class="carousel-item">
-                            <div>
-                                <i class=""></i>
-                                <h6>Vente d’articles de décoration.</h6>
-                                <p>Ballons, fleurs artificielles, accessoires décoratifs, objets tendance.</p>
-                            </div>
-                        </div>
-
-
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+
+                </div>
+
+                <div class="servicesSectionBtnContainer">
+                    <a href="">Plus de service</a>
                 </div>
             </div>
-
-        </div>
-
-        <div>
-            <a href="">Plus de service</a>
         </div>
     </section>
-
 
     <section class="testimonySection row">
         <div>
@@ -357,15 +432,15 @@
                 <h2 class="testimonyTitle">Témoignages</h2>
                 <div class="testimonyItemsContainer">
                     <div class="row align-items-center">
-                        <div class="col">
+                        <div class="col-12 col-xl">
                             <div class="testimonyItem">
                                 <div class="row">
-                                    <div class="col testimonyItemCoverContainer">
+                                    <div class="col-5 col-sm-2 col-xl-5 col-xxl-4 testimonyItemCoverContainer">
                                         <img src="https://i.pinimg.com/736x/7c/91/c8/7c91c85bbd63652db5e79e9ccb2f33e8.jpg"
                                             alt="stephaneCover" class="testimonyItemCover">
                                     </div>
 
-                                    <div class="col-8">
+                                    <div class="col">
                                         <span class="testimonyItemName">Stéphane A.</span>
                                         <div class="testimonyItemRateContainer">
                                             <i class="bi bi-star-fill"></i>
@@ -385,10 +460,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-xl">
                             <div class="testimonyItem">
                                 <div class="row">
-                                    <div class="col testimonyItemCoverContainer">
+                                    <div class="col-5 col-sm-2 col-xl-5 col-xxl-4 testimonyItemCoverContainer">
                                         <img src="https://i.pinimg.com/736x/3e/f0/ce/3ef0ce379294c7a841107328f2134af0.jpg"
                                             alt="soniaCover" class="testimonyItemCover">
                                     </div>
@@ -414,10 +489,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-12 col-xl">
                             <div class="testimonyItem">
                                 <div class="row">
-                                    <div class="col testimonyItemCoverContainer">
+                                    <div class="col-5 col-sm-2  col-xl-5 col-xxl-4 testimonyItemCoverContainer">
                                         <img src="https://i.pinimg.com/1200x/8d/69/83/8d69834f7a8300275dacd2744b4c8fb5.jpg"
                                             alt="rhCover" class="testimonyItemCover">
                                     </div>
@@ -448,15 +523,13 @@
         </div>
     </section>
 
-
-
     <section class="expertiseSection row">
         <div>
             <div class="container">
                 <h2>Nos expertises Clés</h2>
                 <div class="expertiseItemsContainer">
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-sm-4 col-md">
                             <div>
                                 <div class="expertiseItemIconeContainer">
                                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
@@ -504,7 +577,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col col-sm-4 col-md">
                             <div>
                                 <div class="expertiseItemIconeContainer">
                                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
@@ -552,7 +625,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col col-sm-4 col-md">
                             <div>
 
                                 <div class="expertiseItemIconeContainer">
@@ -602,7 +675,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col col-sm-4 col-md">
                             <div>
                                 <div class="expertiseItemIconeContainer">
                                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
@@ -650,7 +723,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col col-sm-4 col-md">
                             <div>
                                 <div class="expertiseItemIconeContainer">
                                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
@@ -704,6 +777,82 @@
             </div>
         </div>
     </section>
+
+
+
+    <footer class="row">
+        <div>
+            <div class="container">
+                <div class="footerOverCopyright">
+                    <div class="row">
+                        <div class="col-12 col-lg">
+                            <div class="footerSiteNameContainer">
+                                <h5 class="footerSiteName">Modallas_s Event & Design</h5>
+                                <p class="footerParagraphUnderSiteName">
+                                    Décoration événementielle et scénographie florale haut de gamme à Cotonou, Bénin.
+                                </p>
+                                <div class="footerIconeContainerUnderParagraphSiteName">
+                                    <a href="">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="bi bi-tiktok"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg">
+                            <div class="footerServiceContainer">
+                                <h5>Services</h5>
+                                <ul>
+                                    <li>Décoration événementielle.</li>
+                                    <li>Scénographie florale.</li>
+                                    <li>Location matériel.</li>
+                                    <li>Conception sur mesure.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg">
+                            <div class="footerEvementContainer">
+                                <h5>Événements</h5>
+                                <ul>
+                                    <li>Mariages.</li>
+                                    <li>Anniversaires.</li>
+                                    <li>Corporate.</li>
+                                    <li>Événements culturels.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="footerContactContainer">
+                                <h5>Contact</h5>
+                                <div class="footerContactItemsContainer">
+                                    <div class="footerContactItem">
+                                        <span> <i class="bi bi-geo-alt-fill"></i> Cotonou, Bénin</span>
+                                    </div>
+                                    <div class="footerContactItem">
+                                        <a href=""><i class="bi bi-whatsapp"></i> Whatsapp</span>
+                                    </div>
+                                    <div class="footerContactItem">
+                                        <a href="mailto:modallasseventanddesign@gmail.com"> <i
+                                                class="bi bi-envelope-fill"></i> modallasseventanddesign@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerCopyright">
+                    <p>
+                        &copy; 2025 Modallas_s Event & Design. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
