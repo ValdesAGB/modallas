@@ -1,0 +1,114 @@
+section {
+    margin-top: 80px;
+
+}
+
+:root {
+    --color-kaki: #b5b394;
+    --color-cream: #fdfaf3;
+}
+
+body {
+    background-color: var(--color-cream);
+    font-family: 'Poppins', sans-serif;
+}
+
+.showroom-section {
+    padding: 80px 0;
+}
+
+.showroom-card {
+    background-color: var(--color-kaki);
+    border-radius: 25px;
+    color: white;
+    padding: 50px;
+    border: none;
+}
+
+.showroom-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.features-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.features-list li::before {
+    content: "✓";
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.btn-coming-soon {
+    background-color: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Style des images du carrousel */
+.carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer-title {
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: block;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    color: #aaa;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+    .showroom-card {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .features-list li {
+        justify-content: center;
+    }
+
+    .carousel {
+        margin-top: 30px;
+    }
+}
