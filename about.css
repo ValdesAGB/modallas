@@ -1,0 +1,76 @@
+section {
+    margin-top: 80px;
+
+}
+
+
+body {
+    background-color: #fbf6dc;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.p,
+h1,
+h2,
+h4,
+h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+.dad {
+    min-height: 50vh;
+    background-image: url(../atelier/IMG/Fond\ Apropos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 100px;
+}
+
+.dad-content {
+    color: white;
+    padding: 50px;
+    max-width: 900px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.dad-content h1 {
+    margin-bottom: 20px;
+}
+
+.dad1 {
+    background-color: #cfc9ad;
+    padding: 50px;
+    margin: 95px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.dad1 h2 {
+    margin-bottom: 20px;
+
+}
+
+.nos {
+    margin-bottom: 80px;
+}
+
+.nos-box {
+    background-color: #f7f1cf;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.nos-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

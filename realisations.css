@@ -1,0 +1,141 @@
+.section1 {
+  margin-top: 80px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #FFF9D9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+section {
+  width: 100%;
+  padding: 80px 0;
+  background: #FFF9D9;
+}
+
+
+.bg-light {
+  background: #FFF9D9 !important;
+}
+
+
+.container {
+  max-width: 1200px;
+}
+
+
+.text-box {
+  padding: 20px;
+}
+
+.text-box h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text-box p {
+  color: #555;
+  line-height: 1.7;
+}
+
+
+.custom-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card:hover img {
+  transform: scale(1.08);
+}
+
+
+.video-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.testimonials-section .card {
+  border: none;
+  border-radius: 20px;
+  background: #FFF9D9;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.testimonials-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-section .card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #e6dfb8;
+}
+
+.testimonials-section .card-text {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+
+  .custom-card img {
+    height: 220px;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.video-card {
+  height: 70vh;
+}
