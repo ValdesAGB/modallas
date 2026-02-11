@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modallas_s Event & Design - Services</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+   <link rel="stylesheet" href="services.css">
+
+
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index_breakpoint.css">
     <!--CDN CSS Bootstrap-->
@@ -33,6 +38,7 @@
     <!--Lien CSS Responsivité-->
     <link rel="stylesheet" href="index_breakpoint.css">
 </head>
+
 
 <body class="container-fluid">
 
@@ -86,81 +92,101 @@
         </div>
     </header>
 
-    <section>
-
-
+    <section class="container">
+        
         <h2>Services</h2>
-        <div class="outer-container">
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="icon-box">📅</div>
-                    <h3>Décoration événementielle</h3>
-                    <p>Conception et réalisation de décors pour tous types d'événements, de l'idée à la mise en place
-                        finale.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-box">☸️</div>
-                    <h3>Scénographie florale</h3>
-                    <p>Création de compositions florales adaptées à chaque ambiance et chaque espace.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-box">📦</div>
-                    <h3>Location de matériel</h3>
-                    [span_2](start_span)<p>Mise à disposition de vases, supports, accessoires, éléments décoratifs</p>
+        <div class="outer-container-custom shadow-sm">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                
+                <div class="col">
+                    <div class="custom-card shadow-sm">
+                        <div class="icon-box">📅</div>
+                        <h3>Décoration événementielle</h3>
+                        <p>Conception et réalisation de décors pour tous types d'événements, de l'idée à la mise en place finale.</p>
+                    </div>
                 </div>
 
-                <div class="bottom-services">
-                    <div class="service-card">
+                <div class="col">
+                    <div class="custom-card shadow-sm">
+                        <div class="icon-box">☸️</div>
+                        <h3>Scénographie florale</h3>
+                        <p>Création de compositions florales adaptées à chaque ambiance et chaque espace.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="custom-card shadow-sm">
+                        <div class="icon-box">📦</div>
+                        <h3>Location de matériel</h3>
+                        <p>Mise à disposition de vases, supports, accessoires et éléments décoratifs variés.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="custom-card shadow-sm">
                         <div class="icon-box">🖋️</div>
                         <h3>Conception sur mesure</h3>
-                        <p>Créations personnalisées selon la vision du client et le thème de l'événement.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon-box">🛍️</div>
-                        <h3>Vente d'articles de décoration</h3>
-                        <p>Ballons, fleurs artificielles, accessoires décoratifs, objets tendance.</p>
+                        <p>Créations personnalisées selon la vision du client et le thème unique de l'événement.</p>
                     </div>
                 </div>
+
+                <div class="col">
+                    <div class="custom-card shadow-sm">
+                        <div class="icon-box">🛍️</div>
+                        <h3>Vente d'articles</h3>
+                        <p>Ballons, fleurs artificielles, accessoires décoratifs et objets tendance pour vos fêtes.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <h2>Évènements</h2>
-        <div class="outer-container">
-            <div class="events-grid">
-                <div class="event-card">
-                    <img src="Images/hem6.jpeg" alt="Événements festifs" class="event-image">
-                    <h3>Événements festifs</h3>
-                    <ul>
-                        <li>• Mariages</li>
-                        <li>• Anniversaires</li>
-                        <li>• Dîners privés</li>
-                    </ul>
+        <h2>Événements</h2>
+        <div class="outer-container-custom shadow-sm">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                
+                <div class="col">
+                    <div class="custom-card shadow-sm text-center">
+                        <img src="Images/hem6.jpeg" alt="Événements festifs" class="event-image">
+                        <h3>Événements festifs</h3>
+                        <ul>
+                            <li>• Mariages</li>
+                            <li>• Anniversaires</li>
+                            <li>• Dîners privés</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="event-card">
-                    <img src="Images/hem5.jpeg" alt="Événements corporate" class="event-image">
-                    <h3>Événements corporate</h3>
-                    <ul>
-                        <li>• Présentations</li>
-                        <li>• Séminaires</li>
-                        <li>• Lancements produits</li>
-                    </ul>
+
+                <div class="col">
+                    <div class="custom-card shadow-sm text-center">
+                        <img src="Images/hem5.jpeg" alt="Événements corporate" class="event-image">
+                        <h3>Événements corporate</h3>
+                        <ul>
+                            <li>• Présentations</li>
+                            <li>• Séminaires</li>
+                            <li>• Lancements produits</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="event-card">
-                    <img src="Images/hem3.jpeg" alt="Événements culturels" class="event-image">
-                    <h3>Événements culturels</h3>
-                    <ul>
-                        <li>• Expositions</li>
-                        <li>• Galas</li>
-                        <li>• Cérémonies</li>
-                    </ul>
+
+                <div class="col">
+                    <div class="custom-card shadow-sm text-center">
+                        <img src="Images/hem3.jpeg" alt="Événements culturels" class="event-image">
+                        <h3>Événements culturels</h3>
+                        <ul>
+                            <li>• Expositions</li>
+                            <li>• Galas</li>
+                            <li>• Cérémonies</li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
         </div>
 
     </section>
 
-
-    <footer class="row">
+ <footer class="row">
         <div>
             <div class="container">
                 <div class="footerOverCopyright">
@@ -245,7 +271,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
-
 </body>
-
 </html>
