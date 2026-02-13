@@ -1,0 +1,46 @@
+        body { font-family: 'Poppins', sans-serif; background-color: #f4f7f6; color: #333; }
+        
+        h1 { font-family: 'Playfair Display', serif; font-weight: 700; color: #1a1a1a; }
+
+        .gallery-item {
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .gallery-item:hover img { transform: scale(1.08); }
+*/
+        .modal-content { background-color: rgba(0, 0, 0, 0.9); border: none; border-radius: 0; }
+        .modal-header { border: none; padding: 1rem 2rem; }
+        .btn-close-white { filter: invert(1) grayscale(100%) brightness(200%); }
+        
+        #lightboxCaption {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: white;
+            margin-top: 15px;
+        }
+
+        .download-btn {
+            background-color: #fff;
+            color: #000;
+            border-radius: 50px;
+            padding: 8px 20px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .download-btn:hover { background-color: #e0e0e0; color: #000; }
